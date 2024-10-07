@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Operator Question</title>
+</head>
+
+<body class="bg-zinc-800 text-white">
+    <h1 class="bg-purple-800 font-bold  mt-20 mb-20 flex mx-auto w-fit px-2 py-1 rounded-xl text-xl">Operator Question :
+        Operators (Arithmetic, Assignment, Comparison, Logical) </h1>
+    <!-- Question -1 -->
+    <div class="container mx-10 mt-10 mb-10">
+        <div>
+            <h1>Add Two Numbers</h1>
+            <p>Question 1:
+                Ek function banao jo do numbers ko input le aur unhe Add Subtract Multiply Divide karke result return
+                kare
+                usme kuch apni trf se bhi chije add kr skte ho.</h1>
+            </p>
+        </div>
+        <div>
+            <div class="flex space-x-5">
+                <input id="input-1" type="number" placeholder="enter number" class="text-black px-2 py-1 text-center">
+                <input id="input-2" type="number" placeholder="enter number" class="text-black px-2 py-1 text-center">
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-4 mt-10">
+                <button id="addBtn" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">+</button>
+                <button id="subBtn" class="bg-red-500 text-white rounded p-2 hover:bg-red-600">-</button>
+                <button id="mulBtn" class="bg-green-500 text-white rounded p-2 hover:bg-green-600">x</button>
+                <button id="divBtn" class="bg-yellow-500 text-white rounded p-2 hover:bg-yellow-600">/</button>
+                <button id="percent" class="bg-pink-500 text-white rounded p-2 hover:bg-pink-600">%</button>
+                <button id="allClear" class="bg-emerald-500 text-white rounded p-2 hover:bg-emerald-600">AC</button>
+            </div>
+            <p id="result" class="text-white mt-5 flex justify-center font-bold text-2xl">Result</p>
+        </div>
+
+    </div>
+
+    <!-- Question -2 -->
+    <div class="container mx-10 mt-10 mb-10">
+        <div>
+            <h1>Check if Number is Even or Odd</h1>
+            <p>Question 2:
+                Ek number input lo aur check karo ki wo even hai ya odd.</h1>
+            </p>
+        </div>
+        <div>
+            <input id="numberInput" type="number" placeholder="enter number" class="text-black px-2 py-1 text-center">
+            <button id="checkBtn" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Check</button>
+            <p id="ResultDis" class="text-white mt-5 flex justify-center font-bold text-2xl">Result</p>
+        </div>
+    </div>
+
+
+    <!-- Question -3 -->
+    <div class="container mx-10 mt-10 mb-10">
+        <div>
+            <h1>whoGreaterBtn</h1>
+            <p>
+                Question 3:
+                Do numbers compare karo aur check karo kaun bada hai ya dono equal hain.
+                </h1>
+            </p>
+        </div>
+        <div>
+            <input id="onenum" type="number" placeholder="enter first number" class="text-black px-2 py-1 text-center">
+            <input id="twonum" type="number" placeholder="enter second number" class="text-black px-2 py-1 text-center">
+            <button id="whoGreaterBtn" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Who is
+                greater?</button>
+            <p id="disCheck" class="text-white mt-5 flex justify-center font-bold text-2xl">Result</p>
+        </div>
+    </div>
+
+    <!-- Question - 4 -->
+    <div class="container mx-10 mt-10 mb-10">
+        <div>
+            <h1>Check if a Number is Positive, Negative, or Zero</h1>
+            <p>
+                Question 4:
+                Ek number input lo aur check karo ki wo positive hai, negative hai, ya zero hai.
+            </p>
+        </div>
+        <div>
+            <input id="numInput" type="number" placeholder="enter number" class="text-black px-2 py-1 text-center">
+            <button id="checkNumBtn" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Check</button>
+            <p id="disCheckNum" class="text-white mt-5 flex justify-center font-bold text-2xl">Result</p>
+        </div>
+    </div>
+    <!-- Question - 5 -->
+    <div class="container mx-10 mt-10 mb-10">
+        <div>
+            <h1>Check if a Number is Divisible by 3 and 5</h1>
+            <p>
+                Question 5:
+                Ek number input lo aur check karo ki wo 3 aur 5 dono se divisible hai ya nahi.
+            </p>
+        </div>
+        <div>
+            <input id="numInputDiv" type="number" placeholder="enter number" class="text-black px-2 py-1 text-center">
+            <button id="checkDivBtn" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Check</button>
+            <p id="disCheckDiv" class="text-white mt-5 flex justify-center font-bold text-2xl">Result</p>
+        </div>
+    </div>
+    <!-- Question - 6 -->
+    <div class="container mx-10 mt-10 mb-10">
+        <div>
+            <h1>Calculate the Average of Five Numbers</h1>
+            <p>
+                Question 6:
+                Paanch numbers input lo aur unka average calculate karo.
+            </p>
+        </div>
+        <div>
+            <input id="num1" type="number" placeholder="enter first number" class="text-black px-2 py-1 text-center">
+            <input id="num2" type="number" placeholder="enter second number" class="text-black px-2 py-1 text-center">
+            <input id="num3" type="number" placeholder="enter third number" class="text-black px-2 py-1 text-center">
+            <input id="num4" type="number" placeholder="enter second number" class="text-black px-2 py-1 text-center">
+            <input id="num5" type="number" placeholder="enter third number" class="text-black px-2 py-1 text-center">
+
+            <button id="calculateBtn" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Calculate
+                Average</button>
+            <p id="disAvg" class="text-white mt-5 flex justify-center font-bold text-2xl">Result</p>
+        </div>
+    </div>
+    <!-- Question - 7 -->
+    <div class="container mx-10 mt-10 mb-10">
+        <div>
+            <h1>Grade Calculator</h1>
+            <p>
+                Question 7:
+                Ek score input lo (0 se 100 tak), aur us score ke hisaab se grade calculate karo (A, B, C, D, F) aur
+                display karo.
+            </p>
+        </div>
+        <div>
+            <input id="scoreInput" type="number" placeholder="enter score" class="text-black px-2 py-1 text-center">
+            <button id="calculateGradeBtn" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Calculate
+                Grade</button>
+            <p id="disGrade" class="text-white mt-5 flex justify-center font-bold text-2xl">Result</p>
+        </div>
+    </div>
+    <!-- Question - 8 -->
+    <div class="container mx-10 mt-10 mb-10">
+        <div>
+            <h1>Toggle Between Two Values</h1>
+            <p>
+                Question 8:
+                Ek button banayein jo har baar click karne par ek value ko switch kare. Pehli baar click karne par "ON"
+                dikhaye aur agle click par "OFF", aur firse agle click par "ON", aur aise hi toggle hoti rahe.
+            </p>
+        </div>
+        <div>
+            <button id="toggleBtn" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Toggle</button>
+            <p id="disToggle" class="text-white mt-5 flex justify-center font-bold text-2xl">Result</p>
+        </div>
+    </div>
+    <script src="1.js"></script>
+</body>
+
+</html>

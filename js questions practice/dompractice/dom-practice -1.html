@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>DOM Practice </title>
+</head>
+
+<body class="bg-zinc-800 h-full w-full">
+    <!-- Question - 1 -->
+    <div>
+        <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 1 : Button Click Text Change
+        </h1>
+
+        <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 mx-10 mb-10">Ek button aur ek
+            tag
+            banao.
+            Jab button click ho, toh tag ke andar ka text change ho jaye..</p>
+
+        <div id="box-1" class="bg-[#518f51] h-[15rem] w-[58rem] mx-[12rem] mt-[5rem]">
+            <div class="flex-col justify-center gap-5 pt-20 ">
+                <p id="para-1"
+                    class="font-bold text-purple-800 border border-black rounded-full px-2 py-4 text-center bg-blue-500 mb-10 h-[50px] overflow-hidden">
+                </p>
+                <span id="btn-1"
+                    class="font-bold text-white border-2 border-black rounded-full px-2 py-1 text-center bg-red-500 hover:cursor-pointer">Change
+                    Text</span>
+            </div>
+        </div>
+    </div>
+    <!-- Question - 2 -->
+    <div>
+        <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 2 : Show/Hide Text</h1>
+
+        <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 mx-10 mb-10">Ek button banao jo
+            text
+            ko
+            show/hide kare. Jab button press karo, toh ek hidden text visible ho jaye, aur agar
+            visible ho toh fir se hidden ho jaye.</p>
+
+        <div id="box-2"
+            class="bg-red-500 h-[28rem] w-[58rem] mx-[12rem] mt-[5rem] relative flex flex-col items-center justify-center mb-20">
+            <p id="para-2"
+                class="text-white text-lg font-semibold mb-5 hidden text-center h-[50px] overflow-hidden border px-2 py-1 rounded-2xl bg-yellow-500">
+                Yeh
+                text show/hide hoga!</p>
+            <button id="btn-2"
+                class="bg-blue-500 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition absolute bottom-4 right-4">Show
+            </button>
+        </div>
+    </div>
+    <!-- Question - 3 -->
+    <div>
+        <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 3 :Change Background Color</h1>
+
+        <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 mx-10 mb-10">Ek button banao jo
+            page
+            ka
+            background color change kar de jab uspe click karo.</p>
+        <div id="box-3" class=" bg-blue-700 h-[15rem] w-[58rem] mx-[12rem] mt-[5rem] mb-10">
+            <button id="btn-3"
+                class="bg-purple-700 text-white px-6 py-2 rounded-full font-bold hover:bg-purple-800 transition mt-20 mx-72">
+                Change to red </button>
+        </div>
+    </div>
+    <!-- Question - 4 -->
+    <div>
+        <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 4 :Increment/Decrement Counter
+        </h1>
+
+        <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 mx-10 mb-10">
+            Ek counter create karo jo button click karne par increment aur decrement ho. Ek button + aur ek button -
+            banake
+            counter ko badhao ya ghata
+        </p>
+
+
+        <div class="bg-slate-800 h-[15rem] w-[58rem] mx-[12rem] mt-[5rem] mb-10 flex justify-center items-center">
+            <button id="increment"
+                class="bg-pink-500 text-white px-6 py-2 rounded-full font-bold hover:bg-pink-700 transition mx-10">
+                Increment</button>
+
+            <span id="counter"
+                class="font-bold text-2xl text-yellow-500 border border-1 border-black px-4 py-1 rounded-full bg-black">0</span>
+
+            <button id="decrement"
+                class="bg-orange-500 text-white px-6 py-2 rounded-full font-bold hover:bg-orange-700 transition mx-10">
+                Decrement</button>
+
+        </div>
+    </div>
+
+    <!-- Question - 5 -->
+    <div>
+        <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 5 :Form Validation
+        </h1>
+
+        <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 mx-10 mb-10">
+            Ek form banao jisme username aur password input ho. Jab form submit ho, toh check karo ki dono fields filled
+            hain ya
+            nahi. Agar empty ho toh error message dikha ghata
+        </p>
+        <div class="flex justify-center">
+            <div class="bg-white p-8 rounded-lg shadow-md w-96 mb-10">
+                <h2 class="text-2xl font-bold mb-6 text-center">Login Form</h2>
+                <form id="loginForm">
+                    <div class="mb-4">
+                        <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
+                        <input type="text" id="username" name="username"
+                            class="border border-gray-300 rounded-lg w-full py-2 px-3 focus:outline-none focus:border-blue-500">
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
+                        <input type="password" id="password" name="password"
+                            class="border border-gray-300 rounded-lg w-full py-2 px-3 focus:outline-none focus:border-blue-500">
+                    </div>
+
+                    <button type="submit"
+                        class="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg w-full hover:bg-blue-600 focus:outline-none">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question -6 -->
+    <div>
+        <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 6 :Color Picker
+        </h1>
+
+        <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+        mx-10 mb-10">
+            Ek color input aur ek box banao. Jab user color select kare, toh box ka background color change ho jaye.
+        </p>
+        <div class="bg-slate-800 h-[25rem] w-[58rem] mx-[12rem] mt-[5rem] mb-10 flex justify-center items-center">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold mb-6">Pick a Color</h1>
+
+                <!-- Color Picker Input -->
+                <input id="colorPicker" type="color"
+                    class="mb-6 p-2 border-2 border-pink-500 rounded-lg cursor-pointer">
+
+                <!-- Box whose color will change -->
+                <div id="box" class="w-64 h-64 bg-pink-500 border-2 border-gray-400 rounded-lg"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question -7 -->
+    <div>
+        <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 6 :Add and Remove Items
+        </h1>
+
+        <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+        mx-10 mb-10">
+            Ek list banao aur usme ek button add karo. Jab button click ho, toh list mein item add ho. Aur ek aur button
+            banao jo last item ko list se remove kare.
+        </p>
+
+        <div class="bg-purple-800 h-[25rem] w-[58rem] mx-[12rem] mt-[5rem] mb-10 flex justify-center items-center">
+            <ul id="ul" class="text-whtie">
+            </ul>
+            <div class="flex">
+                <button id="Add" class="border border-1 rounded-full px-2 py-1 bg-blue-500 mx-5 w-28">Add</button> 
+                <button id="dbtn" class="border border-1 rounded-full px-2 py-1 bg-blue-500 mx-5 w-28">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="domprac-1.js"></script>
+</body>
+
+</html>

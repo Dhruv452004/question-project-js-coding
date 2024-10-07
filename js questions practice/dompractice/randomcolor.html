@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <div id="btn" class="mt-10 border-2 border-green-500 rounded-full px-2 py-1 w-[200px] text-center cursor-pointer">
+        Change Box Color
+    </div>
+
+    <script>
+
+        let randomColor = () => {
+            const r = Math.floor(Math.random() * 256);
+
+            const g = Math.floor(Math.random() * 256);
+
+            const b = Math.floor(Math.random() * 256);
+
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+        let boxColor = document.querySelectorAll('.box');
+
+        let btn = document.querySelector('#btn');
+        btn.addEventListener(('click'), () => {
+            boxColor.forEach((box) => {
+                box.style.backgroundColor = randomColor();
+            });
+        });
+
+    </script>
+</body>
+
+</html>

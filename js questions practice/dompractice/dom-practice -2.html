@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>DOM Practice</title>
+</head>
+
+<body class="bg-zinc-800 h-full w-full">
+    <!-- Question -1 -->
+    <div>
+        <div>
+            <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 1 :Input Value Display and
+                Remove
+            </h1>
+
+            <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+            mx-10 mb-10">
+                Ek input field, ek button aur ek empty
+                div ya container bnao. Button ko click karne par input field se ek naya item add ho jana chahiye. Har
+                list
+                item ke saath ek "Remove" button hona chahiye jo us item ko remove kar de.
+            </p>
+        </div>
+        <div class="mx-[32rem] flex">
+            <input type="text" id="input" class="border p-2 mb-3" placeholder="Enter something">
+
+            <button id="displayBtn"
+                class="bg-blue-500 text-white cursor-pointer px-2 h-10 mx-2 rounded">Display</button>
+            <button id="resetBtn" class="bg-black text-yellow-500 cursor-pointer px-2 h-10 mx-2 rounded">Reset</button>
+
+        </div>
+        <p id="container" class="mt-3 text-white mb-10 mx-[32rem]"></p>
+    </div>
+
+    <!-- Question -2 -->
+    <div>
+        <div>
+            <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 2 :Toggle Visibility
+            </h1>
+
+            <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+            mx-10 mb-10">
+                Ek button aur ek paragraph banao. Button ko click karne par paragraph ki visibility toggle honi chahiye
+                (matlab dikhai de ya chhup jaye)
+            </p>
+        </div>
+        <div class="mx-[10rem] mb-10">
+            <div class="flex items-start"> <!-- Flex container to align items side by side -->
+                <p class="w-[50rem] text-white border border-white rounded-2xl px-2 py-1 bg-[#555ee7da]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit magnam porro! Tenetur
+                    <span id="p-hide" class="hidden">
+                        deleniti nam molestias itaque iure, cum numquam neque sapiente rem consequuntur saepe id
+                        accusamus. Corporis libero incidunt aliquam? Quo natus repellendus quisquam, aperiam eligendi
+                        officiis repellat quae laudantium voluptatum, qui ipsa reprehenderit ratione aliquid impedit vel
+                        libero in sequi maxime quis distinctio modi architecto mollitia id nemo. Delectus, similique
+                        labore quod explicabo at vel tempora excepturi, sed dicta illum ratione reprehenderit
+                        repellendus fuga enim eligendi ipsam tempore dolorem deserunt in iure est dolorum. Dolore
+                        explicabo, voluptates repudiandae quo aliquid deleniti totam! Corrupti beatae repudiandae sunt
+                        reiciendis sit.
+                    </span>
+                </p>
+                <button class="readmore bg-blue-500 hover:bg-blue-800 text-white px-2 py-1 rounded-full ml-4">
+                    Read More
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Question -3 -->
+    <div>
+        <div>
+            <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 3 :Change Background Color
+                on Hoversibility
+            </h1>
+
+            <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+            mx-10 mb-10 px-2 py-1">
+                Ek div element banao jiska size 200x200 pixels ho. Jab tum us div ke upar mouse le jao (hover karo), toh
+                us div ka background color blue se red ho jana chahiye. Jab mouse hata lo (hover se bahar), toh color
+                wapas blue ho jaye.
+                <br>
+                <br>
+                Solution Hint: Tumhe mouseenter aur mouseleave events use karne padenge. style.backgroundColor property
+                ko dynamically update karna pad
+            </p>
+        </div>
+        <div class="flex justify-center mb-10">
+            <div id="box" class="w-[200px] h-[200px] bg-white flex justify-center items-center">
+                RED/BLUE
+            </div>
+            <button id="resetBtn1" class="bg-gray-300 px-2 py-1 rounded self-center ml-4">Reset</button>
+
+        </div>
+    </div>
+
+    <!-- Question -4 -->
+    <div>
+        <div>
+            <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 4: Change Random Box Color
+            </h1>
+            <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+             mx-10 mb-10 px-2 py">
+                Esa box bnao jisme random color generate ho aur box kitne bhi bna do.
+            </p>
+        </div>
+        <div class="flex items-center justify-center m-10">
+            <div class="BOXES w-32 h-32 border border-white"></div>
+            <div class="BOXES w-32 h-32 border border-white"></div>
+            <div class="BOXES w-32 h-32 border border-white"></div>
+            <div class="BOXES w-32 h-32 border border-white"></div>
+            <div class="BOXES w-32 h-32 border border-white"></div>
+            <div class="BOXES w-32 h-32 border border-white"></div>
+            <div class="BOXES w-32 h-32 border border-white"></div>
+            <div id="changeColorBtn"
+                class="ml-5 border-2 border-green-500 rounded-full px-4 py-2 w-[200px] text-center cursor-pointer select-none bg-green-500 text-white hover:bg-green-600 transition duration-300">
+                Change Box Color
+            </div>
+        </div>
+    </div>
+
+    <!-- Question -5 -->
+    <div>
+        <div>
+            <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 5: Count Clicks
+            </h1>
+            <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+             mx-10 mb-10 px-2 py">
+                Ek button aur ek paragraph banao. Jab button ko click kiya jaye, toh paragraph mein ek counter display
+                hona chahiye jo batata hai ki buttodo.
+            </p>
+        </div>
+        <div class="flex items-center justify-center m-10 border borer-white bg-pink-500 h-24 mb-20">
+            <p id="paraCont" class="text-white font-bold items-center"></p>
+            <button id="btnCont" class="ml-5 border-2 border-green-500 rounded-full px-4 text-center cursor-pointer select-none bg-green-500 text-white hover:bg-green-600 transition duration-300">click krbe</button>
+        </div>
+    </div>
+
+
+    <p class="doublePara mt-10 mb-10 mx-[28rem] text-white select-none">hello i am under the waterr</p>
+
+    <script src="domprac-2.js"></script>
+</body>
+
+</html>

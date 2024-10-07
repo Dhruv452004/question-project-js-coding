@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-800 text-white">
+    <div class="container mx-auto p-6 text-center">
+        <h1 class="text-2xl font-bold mb-4">Array Methods Definitions</h1>
+        <ul class="list-disc list-inside space-y-4">
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">push:</strong>
+                <p class="mt-1">Adds one or more elements to the end of an array.</p>
+                <p class="mt-1">Array ke end me ek ya zyada elements add karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">pop:</strong>
+                <p class="mt-1">Removes the last element from an array.</p>
+                <p class="mt-1">Array se last element ko remove karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">shift:</strong>
+                <p class="mt-1">Removes the first element from an array.</p>
+                <p class="mt-1">Array se pehla element remove karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">unshift:</strong>
+                <p class="mt-1">Adds one or more elements to the beginning of an array.</p>
+                <p class="mt-1">Array ke beginning me ek ya zyada elements add karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">concat:</strong>
+                <p class="mt-1">Combines two or more arrays into a single array.</p>
+                <p class="mt-1">Do ya zyada arrays ko ek single array me combine karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">slice:</strong>
+                <p class="mt-1">Returns a shallow copy of a portion of an array into a new array.</p>
+                <p class="mt-1">Array ka ek hissa nikal kar ek naye array me copy karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">splice:</strong>
+                <p class="mt-1">Changes the contents of an array by removing or replacing elements.</p>
+                <p class="mt-1">Array ke elements ko remove ya replace karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">indexOf:</strong>
+                <p class="mt-1">Returns the first index at which a given element can be found in the array.</p>
+                <p class="mt-1">Array me kisi given element ka pehla index return karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">includes:</strong>
+                <p class="mt-1">Checks if an array contains a certain element.</p>
+                <p class="mt-1">Check karta hai ki array me koi specific element hai ya nahi.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">reverse:</strong>
+                <p class="mt-1">Reverses the elements of an array in place.</p>
+                <p class="mt-1">Array ke elements ko ulta kar deta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">join:</strong>
+                <p class="mt-1">Joins all elements of an array into a string.</p>
+                <p class="mt-1">Array ke sabhi elements ko ek string me join karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">split:</strong>
+                <p class="mt-1">Splits a string into an array of substrings.</p>
+                <p class="mt-1">Ek string ko substrings ke array me split karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">sort:</strong>
+                <p class="mt-1">Sorts the elements of an array in place.</p>
+                <p class="mt-1">Array ke elements ko sort karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">find:</strong>
+                <p class="mt-1">Returns the first element in the array that satisfies a provided testing function.</p>
+                <p class="mt-1">Array me pehla element return karta hai jo testing function ko satisfy kare.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">findIndex:</strong>
+                <p class="mt-1">Returns the index of the first element that satisfies a provided testing function.</p>
+                <p class="mt-1">Pehle element ka index return karta hai jo testing function ko satisfy kare.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">map:</strong>
+                <p class="mt-1">Creates a new array with the results of calling a provided function on every element.</p>
+                <p class="mt-1">Har element par ek function call karke ek naye array ko create karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">reduce:</strong>
+                <p class="mt-1">Executes a reducer function on each element of the array, resulting in a single output value.</p>
+                <p class="mt-1">Array ke har element par ek reducer function execute karke ek single output value produce karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">some:</strong>
+                <p class="mt-1">Tests whether at least one element in the array passes the test implemented by the provided function.</p>
+                <p class="mt-1">Check karta hai ki kya array me kam se kam ek element provided function ke test ko pass karta hai.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">every:</strong>
+                <p class="mt-1">Tests whether all elements in the array pass the test implemented by the provided function.</p>
+                <p class="mt-1">Check karta hai ki kya array ke sabhi elements provided function ke test ko pass karte hain.</p>
+            </li>
+            <li class="bg-slate-900 p-4 rounded shadow-md">
+                <strong class="text-blue-500">at:</strong>
+                <p class="mt-1">Returns the element at a given index, allowing negative indices to count from the end.</p>
+                <p class="mt-1">Diye gaye index par element return karta hai, negative indices ko end se count karne ki suvidha deta hai.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

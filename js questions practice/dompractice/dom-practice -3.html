@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>DOM Practice</title>
+</head>
+
+<body class="bg-zinc-800 h-full w-full">
+    <!-- Question -1 -->
+    <div>
+        <div>
+            <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 1: Show/Hide Password
+            </h1>
+            <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+             mx-10 mb-10 px-2 py">
+                Ek input field banao jisme password type ka data enter ho. Uske paas ek button banao jise click karne
+                par password show ya hide ho jaye. Jab password show ho raha ho tab button ka text "Hide Password" ho
+                aur jab password hide ho tab button ka text "Show Password" ho.
+            </p>
+        </div>
+        <div class="flex justify-center mb-10 mt-10">
+            <input type="password" id="passwordInput" placeholder="Enter password" class="px-2 py-1 rounded-full" />
+            <button id="toggleButton"
+                class="bg-blue-500 hover:bg-blue-800 text-white px-2 py-1  rounded-full mx-2 select-none">Show
+                Password</button>
+        </div>
+    </div>
+
+    <!-- Question -2 -->
+    <div>
+        <div>
+            <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 2: Change Color on Button
+                Click
+            </h1>
+            <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+             mx-10 mb-10 px-2 py">
+                Ek button aur ek div banao. Jab button ko click kiya jaye, toh div ka background color randomly change
+                ho jana chahiye.
+            </p>
+        </div>
+        <div class="mx-[38rem] mb-10 mt-10">
+            <div id="boxranColor"
+                class="border border-black bg-white rounded-full w-[200px] h-[200px] text-center mb-10"></div>
+            <button id="changeButton"
+                class="bg-blue-500 hover:bg-blue-800 text-white px-20 py-1  rounded-xl translate-x-2 select-none">change</button>
+        </div>
+    </div>
+
+    <!-- Question -3 -->
+
+    <div>
+        <div>
+            <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">
+                Question 3: Simple Image Slider
+            </h1>
+            <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+             mx-10 mb-10 px-2 py">
+                Do buttons aur ek image element banao. Pehla button "Previous" aur dusra button "Next" ho. Jab "Next"
+                button par click kiya jaye, toh image next image mein change ho. Jab "Previous" button par click kiya
+                jaye, toh image previous image mein change ho. Tumhe kuch images ke URLs store karne honge.
+            </p>
+        </div>
+        <div class="mb-4 flex justify-center">
+            <img id="slider-image"
+                src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Image Slider" class="w-[1200px] h-[500px]  rounded-2xl shadow-lg">
+        </div>
+        <div class="flex justify-center space-x-10">
+            <button id="prev" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Previous</button>
+            <button id="next" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Next</button>
+        </div>
+    </div>
+
+
+    <!-- Question -4 -->
+    <div>
+        <div>
+            <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 4: Count Down Timer
+            </h1>
+            <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+             mx-10 mb-10 px-2 py">
+                Ek button aur ek paragraph banao. Jab button par click kiya jaye, toh paragraph mein 10 se count down
+                shuru ho. Har second ke baad count 1 se kam hona chahiye. Jab count 0 ho jaye, toh paragraph mein
+                "Time's Up!" likha dikhana chahiye.
+
+
+            </p>
+        </div>
+        <div class="flex justify-center space-x-5 bg-slate-800 py-24 mx-20">
+            <p id="countdownDisplay" class="bg-black text-white px-2 py-1 rounded-lg ">10</p>
+            <button id="startButton" class="bg-red-500 hover:bg-red-800 px-2 py-1 rounded-xl">Start Countdown</button>
+        </div>
+    </div>
+
+    <!-- Question -5 -->
+    <div>
+        <div>
+            <div>
+                <h1 class="mt-10 mb-10 font-extrabold text-2xl text-white text-center">Question 5: Change Text Color on
+                    Click
+                </h1>
+                <p class="text-center text-slate-200 border-b border-t rounded-2xl bg-slate-800 
+                 mx-10 mb-10 px-2 py">
+                    Ek paragraph banao jisme "Click me to change my color!" likha ho. Jab tum paragraph par click karo,
+                    toh uska text color randomly change ho jana chahiye.
+
+
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center space-x-5 bg-orange-500 mx-24 py-20 mb-20">
+            <p id="change-p" class="bg-slate-900 px-2 py-1 border border-pink-800 rounded-xl font-bold text-white">
+                Lorem ipsum dolor sit amet.</p>
+            <button id="changetextBtn"
+                class="bg-pink-500 hover:bg-pink-800 px-2 py-1 rounded-xl text-white font-bold">Click Here</button>
+        </div>
+    </div>
+
+    <script src="domprac-3.js"></script>
+</body>
+
+</html>

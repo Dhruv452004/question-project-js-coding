@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <link rel="stylesheet" href="/dist/style.css">
+</head>
+
+<body class=" bg-zinc-800">
+    <!-- question 1 Calculator -->
+<div class="mx-10 mb-20">
+    <h1 class="font-extrabold text-white mt-10 mb-10">Qustion :1 Make a Simple Calculator</h1>
+    <div class="bg-white rounded-lg shadow-lg p-8 w-80">
+        <h1 class="text-2xl font-bold text-center mb-4">Simple Calculator</h1>
+        <input type="number" id="num1" placeholder="First Number"
+            class="border border-gray-300 rounded p-2 mb-4 w-full" />
+        <input type="number" id="num2" placeholder="Second Number"
+            class="border border-gray-300 rounded p-2 mb-4 w-full" />
+
+        <div class="grid grid-cols-2 gap-4 mb-4">
+            <button id="addBtn" class="bg-blue-500 text-white rounded p-2 hover:bg-blue-600">+</button>
+            <button id="subBtn" class="bg-red-500 text-white rounded p-2 hover:bg-red-600">-</button>
+            <button id="mulBtn" class="bg-green-500 text-white rounded p-2 hover:bg-green-600">x</button>
+            <button id="divBtn" class="bg-yellow-500 text-white rounded p-2 hover:bg-yellow-600">/</button>
+        </div>
+
+        <h2 id="result" class="text-lg font-semibold text-center">Result: </h2>
+    </div>
+</div>
+
+    <script src="domprac-4.js"></script>
+</body>
+
+</html>
